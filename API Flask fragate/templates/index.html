@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Flask- astronomy picutre of the day</title>
+</head>
+<body>
+    <h1>{{ copy_right_text }}</h1>
+
+    {% if media_type == 'image' %}
+        <div style="display: flex; justify-content: center;" >
+            <img src="{{hdurl}}" alt="today there is not an image to show" style="width: 480px;">
+        </div>
+    {% elif media_type == 'video'  %}
+    <div style="display: flex; justify-content: center;" >
+        <iframe src="{{hdurl}}" style="width: 480px; height: 500px;"></iframe>  
+    </div>
+
+    {% else %}
+        <div>I don't understand what do display</div>   
+    {% endif %}
+
+    <h2>description </h2>
+    <p>{{description_text}} </p>
+</body>
+
+<footer style="  position: fixed; left: 0; bottom: 0; width: 100%; text-align: center;">
+    <div>copyright</div>
+    <div> 
+        {{copy_right_text}}
+    </div>
+    <div>
+        {{date}}
+    </div>
+</footer>
+</html>

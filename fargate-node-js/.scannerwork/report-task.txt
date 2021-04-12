@@ -1,0 +1,6 @@
+projectKey=myFirstSonarQubeProject
+serverUrl=http://localhost:9000
+serverVersion=8.5.1.38104
+dashboardUrl=http://localhost:9000/dashboard?id=myFirstSonarQubeProject
+ceTaskId=AXVwr9sXO2i-fi2qMl38
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXVwr9sXO2i-fi2qMl38
